@@ -11,6 +11,8 @@ Enable users to interactively explore LEGO sets, filtering by set ID, theme, and
 This project uses Power BI to transform and visualize a LEGO dataset. Data was cleaned and prepared in Power Query. 
 Users can explore set details, analyze KPIs, and drill down by category and theme.
 
+![lego-report](screenshots/short-interactivity.gif)
+
 ## Key Features
 - **KPI Cards:** Total sets, average pieces, average price, average age.
 - **Interactive Filters:** Slicers by theme, theme group, and age range. 
