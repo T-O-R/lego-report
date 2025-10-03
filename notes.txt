@@ -1,0 +1,39 @@
+-Connect the lego_sets csv, Power Query
+--remove minifigs, bircksetURL and thumbnailURL
+--review header names and data types for accuracy
+--filter out records that don't include the price, age, number and pieces or Image URL
+--profile the data: How many LEGO sets are represented? What's the price range?
+
+-Create the following conditional columns:
+--: Age Range("Over 18", "10 to 17", "5 to 9", "1 to 4")
+--: Price Range(>$500 = "$$$$$", >$100 = "$$$$", > $50 = "$$$", > $20 = "$$", otherwise "$"
+
+-Add DAX(data analysis expressions) calculating the (total sets) and theme groups (total groups)
+as well as average age, average price and average pieces.
+
+-Take a moment to sketch potential layouts based on the project brief.
+
+-Insert card visuals to show total sets, average pieces and average price
+
+-Add slicers to filter based on theme group, theme and age range.
+
+-Insert a table to show name, set_id, theme, age range, pieces, avg price and price range.
+
+-Show details for the selected set, including name, image, price, year, pieces and age
+--BONUS: Use DAX measures to display placeholder values ("-") if multiple sets are selected
+
+-Edit report interactions to prevent table selections from filtering the top-level cards
+
+-Add a numeric range parameter (Max Price) ranging from 0-850 and incrementing by 5
+--Add a slicer to the page, and change the style to single value
+--Add a measure comparing average price against the selected slicer value, and use it to filter the table
+
+-Enable tooltips on the table to display the image of each LEGO set on hover
+
+-Use bookmarks and buttons actions to allow users to reset all filters on the page
+--BONUS: Customize the button format for "on hover" and "on press" states
+
+-Duplicate the page and replace visuals with a decomposition tree, configured to analyze total sets by
+category, theme group, theme and name
+--Add new buttons to navigate to and from each report page
+
